@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BmiCalculator"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#dddddd"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint=" Your Height in centimeter"
+        android:id="@+id/height"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="#dddddd"
+
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint=" Your Weight in Kilogram "
+        android:id="@+id/weight"
+        android:gravity="center"
+        android:layout_below="@id/height"
+        android:layout_margin="10dp"
+        android:background="#dddddd"
+
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="COMPUTE BMI"
+        android:id="@+id/computebmi"
+        android:layout_below="@id/weight"
+        android:layout_margin="10dp"
+        android:background="#9696eb"
+
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txtresult"
+        android:hint="Result"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_below="@id/computebmi"
+        android:layout_margin="10dp"
+        android:background="#a2f3a2"
+
+        />
+
+
+</RelativeLayout>
